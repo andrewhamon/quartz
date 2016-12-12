@@ -44,8 +44,8 @@ This has a number of consequences for timers such as this library:
 - The block you pass your timer might never get called, if the main fiber terminates too early or if it never yields control.
 - Different timers might fire in a different order than expected. A shorter timer could fire after a longer timer
 - Timers are not precise.
-- A shorter timer is not guaranteed to execute before a separate, longer timer.
 
+tl;dr if you have precise timing requirements, you should look elsewhere
 
 ## Contributing
 
