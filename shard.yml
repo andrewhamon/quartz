@@ -1,0 +1,9 @@
+name: quartz
+version: 0.1.0
+
+authors:
+  - Andrew Hamon <andrew@hamon.cc>
+
+crystal: 0.20.1
+
+license: MIT
