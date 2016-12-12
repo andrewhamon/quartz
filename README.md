@@ -1,4 +1,4 @@
-# Quartz
+# Quartz [![Build Status](https://travis-ci.org/andrewhamon/quartz.svg?branch=master)](https://travis-ci.org/andrewhamon/quartz)
 
 Dead simple timers in Crystal
 
@@ -8,7 +8,7 @@ Add this to your application's `shard.yml`:
 
 ```yaml
 dependencies:
-  timer:
+  quartz:
     github: andrewhamon/quartz
 ```
 
@@ -35,7 +35,7 @@ sleep(5)
 
 Crystal is concurrent, but not (yet) parallel. Crystal fibers don't run immediately after being spawned, the main fiber must yield control, either explicitly by sleeping or implicitly by doing blocking IO.
 
-See [the docs](https://crystal-lang.org/docs/guides/concurrency.html) for a more detailed explanation.
+See [the Crystal docs](https://crystal-lang.org/docs/guides/concurrency.html) for a more detailed explanation.
 
 This has a number of consequences for timers such as this library:
 
@@ -52,7 +52,7 @@ This has a number of consequences for timers such as this library:
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
-5. Create a new Pull Request
+5. Create a new Pull Request to the develop branch
 
 ## Contributors
 
